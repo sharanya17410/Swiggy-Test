@@ -7,12 +7,12 @@ const initialState = {};
 
 const middleware = [thunk];
 
+//Setting up the redux store
+
 const store = createStore(
   rootReducer,
   initialState,
   composeWithDevTools(applyMiddleware(...middleware))
 );
-function getStoreDetails() {
-  console.log(store.getState());
-}
+
 export default store;

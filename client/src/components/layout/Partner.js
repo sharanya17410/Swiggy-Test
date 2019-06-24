@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-type';
 
+//Displaying individual delivery partner details
 const Partner = ({
   partner: {
     _id,

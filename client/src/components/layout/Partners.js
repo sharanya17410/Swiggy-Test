@@ -5,6 +5,7 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import PropTypes from 'prop-types';
 import { getPartner } from '../../actions/partner';
 import Partner from './Partner';
+
 const Partners = ({
   getPartner,
   partner: { partner },
@@ -85,27 +86,14 @@ Partners.propTypes = {
   partner: PropTypes.object.isRequired
 };
 
-// const Partners = () => {
-//   return (
-//     <div id='partner-container'>
-//       <h1 class='text-center'>Enter pick up coordinates</h1>
-//       <form id='search'>
-//         <label>Enter your Latitude:</label>
-//         <input type='text' placeholder='latitude' required />
-//         <label>Enter your Longitude:</label>
-//         <input type='text' placeholder='longitude' required />
-//         <input type='submit' value='Find Partner' />
-//       </form>
-//       {/* <ul>{ninjas}</ul> */}
-//     </div>
-//   );
-// };
-
 const mapStateToProps = state => {
   return {
     partner: state.partner
   };
 };
+
+//Connecting google maps react package with the delivery partners function
+
 const WrappedContainer = GoogleApiWrapper({
   apiKey: 'AIzaSyBhfyekbl4Y9cqQJAnP2ULXjKkXEV0kiT0'
 })(Partners);
