@@ -1,5 +1,7 @@
 # Swiggy-Test
 
+Application fetches the nearest delivery partner to a pickup location and plots it on a graph
+
 To run the Application on your system follow these steps:
 1 . Run npm install on the source folder
 2 . Navigate into the client folder and run npm install on the client folder
@@ -20,5 +22,6 @@ Server Side : Node JS , Express JS , MongoDB Atlas
 Client Side: React - Redux
 1. Information was extracted by making a request to the API end point for getting the partner available near the pickup location.
 2 . Information was presented on the application using Redux.
+3 . All the locations were plotted on google maps using google-maps-react package
 
 
